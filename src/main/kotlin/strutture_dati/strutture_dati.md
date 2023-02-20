@@ -33,7 +33,10 @@ NON PRIMITIVI
 - ### ARRAY BI/TRIDIMENSIONALI  
 
 
-- ### LINKED LIST
+- ### LINKED LIST  
+  Lista simile agli array, ma che a differenza di essi, non salva gli elemtni in posizioni contigue di memoria, ma ogni nodo(item) contiene un puntatore al nodo successivo.
+  Se si utilizzasse un array, ogni volta che si deve aggiungere o eliminare un'attività in mezzo alla lista, si dovrebbe spostare manualmente gli elementi successivi di una posizione avanti o indietro. 
+  Invece, utilizzando una linked list, l'inserimento o l'eliminazione di un'attività in mezzo alla lista richiederebbe solo la modifica dei puntatori ai nodi coinvolti(precedente e successivo) e sarebbe quindi più efficiente in termini di complessità computazionale (meno passaggi).
 
 
 - ### QUEUE (CODE) - FIFO, first in, first out  
