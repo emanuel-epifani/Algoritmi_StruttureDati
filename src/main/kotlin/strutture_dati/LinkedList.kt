@@ -68,8 +68,8 @@ fun linkedList() {
     val node4Found = node1.next?.next?.next
 
     // inserisce il nuovo nodo dopo il quarto nodo
-    node4Found?.next = newNode //modifico puntatore a nodo PRECEDENTE (inserisce il nuovo nodo davanti al nodo4)
     newNode.next = node4Found?.next //modifico puntatore a nodo SUCCESSIVO (lega il nuovo nodo al nodo a cui era legato node4 prima)
+    node4Found?.next = newNode //modifico puntatore a nodo PRECEDENTE (inserisce il nuovo nodo davanti al nodo4)
 
     // stampa i valori dei nodi nella lista modificata
     var currentNode: Node? = node1
